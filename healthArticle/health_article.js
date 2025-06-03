@@ -12,7 +12,7 @@ xhr.onload = function() {
         var articleDiv = document.createElement('div');
         articleDiv.classList.add('article');
 
-        var title = doument.createElement('h2');
+        var title = document.createElement('h2');
         title.textContent = article.title;
 
         var description = document.createElement('p');
