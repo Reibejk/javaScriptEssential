@@ -37,7 +37,7 @@ function editbook(index) {
     document.getElementById('authorName').value = book.authorName;
     document.getElementById('bookDescription').value = book.bookDescription;
     document.getElementById('pagesNumber').value = book.pagesNumber;
-    books.slice(index, 1);
+    books.splice(index, 1);
     showbooks();
 }
 
@@ -46,4 +46,9 @@ function clearInputs() {
     document.getElementById('authorName').value = '';
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';
+}
+
+function deleteBook(index) {
+    books.splice(index, 1)
+    showbooks();
 }
