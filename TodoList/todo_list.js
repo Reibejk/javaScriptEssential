@@ -24,7 +24,7 @@ function displayTasks() {
     });
 }
 
-function toggleTask() {
+function toggleTask(index) {
     tasks[index].completed = !tasks[index].completed;
     displayTasks();
 }
@@ -36,3 +36,4 @@ function clearCompletedTasks() {
 
 addTaskBtn.addEventListener("click", addTask);
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
+displayTasks();
